@@ -1,5 +1,6 @@
 # Copy a desktop shotcut and associated icon
 # Amend for other files
+# Add files and a bat file with the content below to a Win32 app
 rem Copy Files
 copy app01.lnk c:\Users\Public\Desktop\app01.lnk /Y
 copy App01-64_130.ico c:\Windows\System32\App01-64_130.ico /Y
