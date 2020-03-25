@@ -1,0 +1,3 @@
+# Dynamic Membership rule for All Autopilot Devices 
+# Create a group called Intune-Windows10-Devices
+(device.devicePhysicalIDs -any _ -contains "[ZTDId]")

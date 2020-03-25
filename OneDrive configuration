@@ -1,0 +1,10 @@
+# Create a Device Configuration Policy called "OneDrive Known Folders"
+# Description "Move users known folders to OneDrive silently and sign the user in silently. https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid"
+# Click Create
+# Open the policy and select Settings
+# Search for OneDrive, it can take time before the search works on a new policy
+#
+# Enable the 2 settings
+# Silently sign in users to the OneDrive sync client with their Windows credentials
+# Silently move Windows known folders to OneDrive
+# to find the Tenant ID https://o365hq.com/faq/how-to-find-your-office-365-tenant-id
