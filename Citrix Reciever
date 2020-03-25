@@ -1,0 +1,6 @@
+# Download lastest from Citrix
+# Package as Win32 app
+# Add the following install string 
+CitrixReceiver.exe /noreboot /silent
+# uninstall string
+CitrixWorkspaceApp.exe /silent /uninstal
