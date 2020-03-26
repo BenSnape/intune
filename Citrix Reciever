@@ -1,6 +1,7 @@
 # Download lastest from Citrix
+# Rename CitrixReceiver.exe to CitrixReceiverWeb.exe to uppress the Add Account pop up
 # Package as Win32 app
 # Add the following install string 
-CitrixReceiver.exe /noreboot /silent
+CitrixReceiverWeb.exe /noreboot /silent
 # uninstall string
 CitrixWorkspaceApp.exe /silent /uninstal
