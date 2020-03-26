@@ -1,0 +1,7 @@
+# Create a Device configuration policy
+# Platform Windows 10 and later
+# Profile Type Custom
+# Name Set Time Zone    
+# OMA-URI  ./Device/Vendor/MSFT/Policy/Config/TimeLanguageSettings/ConfigureTimeZone
+# Data type String
+# Value GMT Standard Time
