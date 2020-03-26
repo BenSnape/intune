@@ -1,0 +1,3 @@
+# Create a froup to exclude from Policies for troubleshooting
+# Create a group called ITLMD-Policy-Exclude
+# Desription "Add users and devices to the group temporarily to troubleshoot and snag problems"
