@@ -1,4 +1,5 @@
-#  Install the Windows Configuration Designer to a Windows 10 PC for the company
+# Install the Windows Configuration Designer to a Windows 10 PC for the company
+# https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd
 # (you can use your own but it will be associated with the company)
 # Create a new Windows 10 deployment
 # Add the computername as the Windows Enrollment Profile i.e. ITLMD-%SERIAL%
@@ -7,3 +8,6 @@
 # Add applicaitions if needed
 # Create
 # Remove account from settings if not a company machine
+# Rebuild a PC with the latest Windows 10 build
+# Insert the USB or copy the settings to the Win 10 USB
+# https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package
