@@ -9,5 +9,6 @@
 # Create
 # Remove account from settings if not a company machine
 # Rebuild a PC with the latest Windows 10 build
+# https://www.microsoft.com/en-gb/software-download/windows10
 # Insert the USB or copy the settings to the Win 10 USB
 # https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package
