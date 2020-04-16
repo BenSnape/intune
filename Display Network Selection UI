@@ -1,0 +1,4 @@
+Windows Logon - Don't Display Network Selection UI
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI
+Set to <enabled/> for hidden showing on logon screen
+Set to <disabled/> for showing on logon screen
