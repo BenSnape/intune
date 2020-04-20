@@ -1,0 +1,2 @@
+REM update .exe name to suit
+DattoWindowsAgent.exe /quiet /norestart
