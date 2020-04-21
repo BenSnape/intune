@@ -1,0 +1,9 @@
+# Create a Device Configuration Policy With Administrative Templates
+# Called "Configure Outlook"
+# Description "Automatically configuring the user’s mailbox
+https://oofhours.com/2020/04/07/outlook-and-azure-ad-join-automatically-configuring-the-users-mailbox/"
+# Click Create
+# Open the policy and select Settings
+# Search in Users ? All settings "Automatically configure profile based on Active Directory Primary SMTP address"for OneDrive, it can take time before the search works on a new policy
+#
+# Enable the setting
