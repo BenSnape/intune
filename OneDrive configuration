@@ -1,4 +1,5 @@
-# Create a Device Configuration Policy called "OneDrive Known Folders"
+# Create a Device Configuration Policy With Administrative Templates
+# Called "OneDrive Known Folders"
 # Description "Move users known folders to OneDrive silently and sign the user in silently. 
 Folders moved: Desktop, Documents, Pictures
 https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid"
