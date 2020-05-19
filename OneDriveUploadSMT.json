@@ -1,0 +1,28 @@
+{
+
+  "Tasks": [
+
+    {
+      "SourcePath": "\\\\servername\\home\\test.user\\Desktop",
+      "TargetPath": "https://companysharepoint-my.sharepoint.com/personal/test_user_cmcpartnership_com",
+      "TargetList": "Documents",
+      "TargetListRelativePath": "Desktop"
+    },
+{
+      "SourcePath": "\\\\servername\\home\\test.user\\Documents",
+      "TargetPath": "https://companysharepoint-my.sharepoint.com/personal/test_user_cmcpartnership_com",
+      "TargetList": "Documents"
+    },
+	{
+"SourcePath": "\\\\servername\\home\\Test.User2\\Documents",	
+"TargetPath": "https://companysharepoint-my.sharepoint.com/personal/daniel_may_cmcpartnership_com", 
+"TargetList": "Documents"
+    },
+		{
+"SourcePath": "\\\\servername\\home\\Test.User2\\Desktop",	
+"TargetPath": "https://companysharepoint-my.sharepoint.com/personal/daniel_may_cmcpartnership_com", 
+      "TargetList": "Documents",
+      "TargetListRelativePath": "Desktop"
+    }
+  ]
+}
