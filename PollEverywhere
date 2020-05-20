@@ -1,3 +1,3 @@
 Rem #  Installs the Poll Everywhere plugin silently
 Rem #   Update to download file version
-pollev.exe /S
+msiexec.exe /qn /i PollEverywhere.Everyone.msi INSTALLFOR="ALL" MSIINSTALLPERUSER=0
