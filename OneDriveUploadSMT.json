@@ -11,12 +11,14 @@
 {
       "SourcePath": "\\\\servername\\home\\test.user\\Documents",
       "TargetPath": "https://companysharepoint-my.sharepoint.com/personal/test_user_companysharepoint_com",
-      "TargetList": "Documents"
+      "TargetList": "Documents",
+      "TargetListRelativePath": "Documents"
     },
 	{
 "SourcePath": "\\\\servername\\home\\Test.User2\\Documents",	
 "TargetPath": "https://companysharepoint-my.sharepoint.com/personal/test_user2_companysharepoint_com", 
-"TargetList": "Documents"
+      "TargetList": "Documents",
+      "TargetListRelativePath": "Documents"
     },
 		{
 "SourcePath": "\\\\servername\\home\\Test.User2\\Desktop",	
