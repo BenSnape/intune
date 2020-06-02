@@ -1,5 +1,4 @@
-#Detect on Computer\HKEY_USERS\.DEFAULT\Printers\ConvertUserDevModesCount
-#Value is printername
+#Detect on Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\Xerox versalink C405
 #
 #C:\Windows\Sysnative\pnputil.exe -i -a .\x3UNIVX.inf
 #Add-PrinterDriver -Name "Xerox Global Print Driver PCL6"
