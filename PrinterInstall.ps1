@@ -1,3 +1,6 @@
+#Detect on Computer\HKEY_USERS\.DEFAULT\Printers\ConvertUserDevModesCount
+#Value is printername
+#
 #C:\Windows\Sysnative\pnputil.exe -i -a .\x3UNIVX.inf
 #Add-PrinterDriver -Name "Xerox Global Print Driver PCL6"
 #Add-PrinterPort -Name "Xerox 6515" -PrinterHostAddress "192.168.88.65"
