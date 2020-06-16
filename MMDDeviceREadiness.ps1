@@ -1,7 +1,6 @@
 # Create a folder structure
 New-Item -ItemType "directory" -Path "c:\DeviceReadinessAssessmentTool\$env:computername"
 #Move the Tool files and folders
-Move-Item -Path -Destination "c:\DeviceReadinessAssessmentTool\$env:computername"
 Move-Item -Path Config -Destination "c:\DeviceReadinessAssessmentTool\$env:computername"                                          
 Move-Item -Path Report -Destination "c:\DeviceReadinessAssessmentTool\$env:computername"
 Move-Item -Path DRATReadMe.txt -Destination "c:\DeviceReadinessAssessmentTool\$env:computername"
