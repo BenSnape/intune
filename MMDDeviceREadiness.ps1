@@ -16,3 +16,5 @@ Copy-Item -Path System.Management.Automation.dll -Destination "c:\DeviceReadines
 start-process "c:\DeviceReadinessAssessmentTool\$env:computername\Microsoft.MMD.DeviceReadinessAssessmentTool.exe"
 # Copy files to Sharepoint folder
 robocopy /xc /xn /xo "c:\DeviceReadinessAssessmentTool\" https://greenchillijam.sharepoint.com/:f:/s/test2/Elv6_2W2v6RPjhvJF_tAVGgBKMg1OTjDzc6ZNYk80vzy3A?e=oTa0Vq
+# If the folder is in Sharepoint add an item to test on the Intune app
+if((Test-Path -Path https://greenchillijam.sharepoint.com/:f:/s/test2/Elv6_2W2v6RPjhvJF_tAVGgBKMg1OTjDzc6ZNYk80vzy3A?e=oTa0Vq\$env:computername )){  New-Item -ItemType "directory" -Path "c:\DeviceReadinessAssessmentTool\Complete"}
