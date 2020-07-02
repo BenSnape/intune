@@ -1,0 +1,2 @@
+# https://www.think-cell.com/en/support/manual/deploymentguide.shtml
+msiexec /i setup_think-cell_28XXX.msi /qn LICENSEKEY="A1B2C-3D4......" NOFIRSTSTART=1 SUPPORTEMAIL="service.desk@domain.com"
