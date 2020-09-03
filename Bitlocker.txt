@@ -1,0 +1,22 @@
+Platform: Windows 10 and later
+Profile type: Endpoint protection
+
+Configuration settings
+
+Windows Encryption
+Encrypt devices: Require
+Warning for other disk encryption: Block
+Allow standard users to enable encryption during Azure AD Join: Allow
+Configure encryption methods: Enable
+Additional authentication at startup: Require
+OS drive recovery: Enable
+Save BitLocker recovery information to Azure Active Directory: Enable
+Client-driven recovery password rotation: Key rotation enabled for Azure AD-joined devices
+Store recovery information in Azure Active Directory before enabling BitLocker: Require
+Store recovery information in Azure Active Directory before enabling BitLocker: Require
+Fixed drive recovery: Enable
+
+Local device security options
+Format and eject removable media: Administrators
+Elevation prompt for admins: Prompt for consent for non-Windows binaries
+Elevation prompt for standard users: Prompt for credentials
