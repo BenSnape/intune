@@ -15,8 +15,3 @@ Client-driven recovery password rotation: Key rotation enabled for Azure AD-join
 Store recovery information in Azure Active Directory before enabling BitLocker: Require
 Store recovery information in Azure Active Directory before enabling BitLocker: Require
 Fixed drive recovery: Enable
-
-Local device security options
-Format and eject removable media: Administrators
-Elevation prompt for admins: Prompt for consent for non-Windows binaries
-Elevation prompt for standard users: Prompt for credentials
