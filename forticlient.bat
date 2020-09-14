@@ -2,6 +2,7 @@
 ### https://kb.fortinet.com/kb/documentLink.do?externalID=FD41256
 ### failed ### FortiSSLVPNclient.exe connect -s TMCP-VPN -h vpn.domain.com i -m -q
 ### https://www.reddit.com/r/fortinet/comments/6g5fs9/how_to_deploying_vpn_only_forticlient_without/
+### http://www.osd-couture.com/2019/02/installing-fortinet-vpn-free-edition.html
 ### Download the .exe and run to edownload the .msi fiel in %temp%
 ### setup a client and export hte registry from HKEY_LOCAL_MACHINE\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\
 
