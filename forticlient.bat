@@ -7,10 +7,14 @@
 ### setup a client and export hte registry from HKEY_LOCAL_MACHINE\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\
 
 ### Import reg
-Reg import FortinetSettings.reg
+##Reg import FortinetSettings.reg
 
 ### Install Forticlient
-Msiexec /qb /i FortiClientVPN.msi /norestart INSTALLLEVEL=3
+##Msiexec /qb /i FortiClientVPN.msi /norestart INSTALLLEVEL=3
+
+### https://www.reddit.com/r/fortinet/comments/fi16uv/automating_the_install_of_forticlient_vpn_nonems/
+msiexec /i FortiClientVPN.msi /passive /quiet INSTALLLEVEL=3 DESKTOPSHORTCUT=0
+reg import FortinetSettings.reg
 
 Rem # get the MSI identifier get-wmiobject Win32_Product | Sort-Object -Property Name | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
 Rem # Uninstall command 
