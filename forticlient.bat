@@ -16,6 +16,10 @@
 msiexec /i FortiClientVPN.msi /passive /quiet INSTALLLEVEL=3 DESKTOPSHORTCUT=0
 reg import FortinetSettings.reg
 
+### https://www.reddit.com/r/SCCM/comments/fd51ns/deploy_forticlient_thru_sccm_pre_configured/
+msiexec /i FortiClientVPN.msi /passive /quiet INSTALLLEVEL=3 DESKTOPSHORTCUT=0
+"C:\Program Files\Fortinet\FortiClient\fcconfig.exe" -o import -f FortiClient.conf -p <password>
+
 Rem # get the MSI identifier get-wmiobject Win32_Product | Sort-Object -Property Name | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
 Rem # Uninstall command 
 msiexec /x {MSI ID} /q
