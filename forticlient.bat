@@ -9,7 +9,7 @@
 Reg import FortinetSettings.reg
 
 ### Install Forticlient
-Msiexec /qb /i FortiClient.msi /norestart INSTALLLEVEL=3
+Msiexec /qb /i FortiClientVPN.msi /norestart INSTALLLEVEL=3
 
 Rem # get the MSI identifier get-wmiobject Win32_Product | Sort-Object -Property Name | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
 Rem # Uninstall command 
