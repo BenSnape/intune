@@ -2,7 +2,7 @@
 # https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd
 # (you can use your own but it will be associated with the company)
 # Create a new Windows 10 deployment
-# Add the computername as the Windows Enrollment Profile i.e. ITLMD-%SERIAL%
+# Add the computername as the Windows Enrollment Profile i.e. Company-%SERIAL%
 # Setup a wireless network if known
 # Enroll a bulk token, the device is added t the company. the token will last 6 months
 # Add applicaitions if needed
