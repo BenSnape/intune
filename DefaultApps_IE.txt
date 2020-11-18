@@ -1,3 +1,9 @@
+  
+Name: DefaultApps
+Desc: Default apps in Base64 format
+./Vendor/MSFT/Policy/Config/ApplicationDefaults/DefaultAssociationsConfiguration
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <DefaultAssociations>
   <Association Identifier=".3g2" ProgId="VLC.3g2" ApplicationName="VLC media player" />
