@@ -1,0 +1,6 @@
+##  download the package from Adobe, log in as an admin for this
+##  The name given to the package will be the MSI   when running get-wmiobject Win32_Product | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+## Extract the zip file
+##  Package as Win32 using hte setup.exe file
+Install commnand | setup.exe --silent
+Uninstali command| msiexec /x <code>
