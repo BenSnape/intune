@@ -1,0 +1,19 @@
+Use https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-dirsync
+
+Troubleshoot
+Check the Azure AD device has the root CA form the domain
+
+Check the CRL site is available over the VPN/LAN
+
+Check the device GUID is listed in AD
+   Domain > RegisteredDevices
+
+Login to the device with the password to confirm this works
+
+ 
+
+Check ADSync
+
+https://www.itgeekrambling.co.uk/windows-10-hello-business-return-option-temporarily-unavailable-message/
+
+ 
