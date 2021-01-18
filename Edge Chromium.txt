@@ -1,0 +1,12 @@
+https://tech.nicolonsky.ch/managing-the-new-microsoft-edge-browser-with-intune/
+https://mrshannon.wordpress.com/2020/07/10/configure-auto-sign-in-and-sync-for-edge-with-intune/
+
+Control which extensions are installed silently
+Install MyApps extension
+gaaceiggkkiffbfdpmfapegoiohkiipl;https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl
+
+Browser sign-in settings
+Force users to sign-in to use the browser
+
+Configure whether a user always has a default profile automatically signed in with their work or school account
+Enabled
