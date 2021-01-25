@@ -1,2 +1,6 @@
 REM update .exe name to suit
 DattoWindowsAgent.exe /quiet /norestart
+Uninstall "C:\Program Files (x86)\CentraStage\uninst.exe"
+
+Detection rules
+File C:\ProgramData\CentraStage\AEMAgent
