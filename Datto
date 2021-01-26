@@ -4,3 +4,4 @@ Uninstall "C:\Program Files (x86)\CentraStage\uninst.exe"
 
 Detection rules
 File C:\ProgramData\CentraStage\AEMAgent
+AEMAgent.exe
