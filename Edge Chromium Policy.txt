@@ -10,3 +10,13 @@ Force users to sign-in to use the browser
 
 Configure whether a user always has a default profile automatically signed in with their work or school account
 Enabled
+
+Enabled
+Sites to open when the browser starts
+Enabled
+Configure the home page URL
+Enabled
+Sites to open when the browser starts
+Enabled
+Action to take on startup
+Enabled
