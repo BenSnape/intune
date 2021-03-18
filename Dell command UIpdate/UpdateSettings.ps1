@@ -1,0 +1,3 @@
+﻿New-ItemProperty -Path Registry::"HKLM\Software\Dell\UpdateService\Clients\Commandupdate\Preferences\CFG" -Name "ShowSetupPopup" -PropertyType "DWORD" -Value "0" -Force
+Start-Process "C:\Program Files\Dell\CommandUpdate\dcu-cli.exe" -ArgumentList "/configure -importsettings=DellCommandSettings.xml" -NoNewWindow -Wait
+Start-Process "C:\Program Files\Dell\CommandUpdate\dcu-cli.exe" -ArgumentList "/configure -LockSettings=enable" -NoNewWindow -Wait
