@@ -1,6 +1,11 @@
 # Export settings
-#$GPC = get-printconfiguration  -PrinterName "Main Printer_Colour"
-#$GPC.PrintTicketXML | out-file C:\Temp\Main_Printer_Colour.xml
+#$GPC = get-printconfiguration  -PrinterName "printer"
+#$GPC.PrintTicketXML | out-file C:\Temp\printer.xml
+#
+#Import
+#$XMLA = Get-Content "C:\Temp\printer.xml" | Out-String  
+#Set-PrintConfiguration -PrinterName "printer1" -PrintTicketXml $XMLA
+#
 #
 #Detect on Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\Xerox versalink C405
 #
