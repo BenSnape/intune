@@ -1,3 +1,7 @@
+# Export settings
+#$GPC = get-printconfiguration  -PrinterName "Main Printer_Colour"
+#$GPC.PrintTicketXML | out-file C:\Temp\Main_Printer_Colour.xml
+#
 #Detect on Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\Xerox versalink C405
 #
 #C:\Windows\Sysnative\pnputil.exe -i -a .\x3UNIVX.inf
