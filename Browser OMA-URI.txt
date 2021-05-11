@@ -12,11 +12,11 @@ Disable checking for default browser
 
 Disable saving logins
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/OfferToSaveLogins
-<enabled/> <data id="OfferToSaveLogins" value="0"/>
+<disabled/> <data id="OfferToSaveLogins" value="0"/>
 
 Disable Password manager
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PasswordManagerEnabled
-<enabled/> <data id="PasswordManagerEnabled" value="0"/>
+<disabled/> <data id="PasswordManagerEnabled" value="0"/>
 
 
 Don't check for default browser
