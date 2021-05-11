@@ -1,0 +1,25 @@
+Chrome
+
+./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome/BrowserSignin
+<enabled/> <data id="BrowserSignin" value="0"/>
+
+./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~PasswordManager/PasswordManagerEnabled
+<enabled/> <data id="PasswordManagerEnabled" value="0"/>
+
+Disable checking for default browser
+./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome/DefaultBrowserSettingEnabled
+<enabled/> <data id="DefaultBrowserSettingEnabled" value="0"/>
+
+Firefox
+
+Disable saving logins
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/OfferToSaveLogins
+<enabled/> <data id="OfferToSaveLogins" value="0"/>
+
+Don't check for default browser
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DontCheckDefaultBrowser
+<enabled/> <data id="DontCheckDefaultBrowser" value="1"/>
+
+Disable logging in to Firefox account
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxAccounts
+<enabled/> <data id="DisableFirefoxAccounts" value="1"/>
