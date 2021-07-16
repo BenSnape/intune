@@ -1,0 +1,9 @@
+disabling Office OOXML Prompt Policy
+
+OMA URI
+./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/Office365ProPlus/Policy/OfficeFirstRunOOXML
+
+Data type String
+
+Value
+<?xml version="1.0" encoding="utf-16"?> <policyDefinitions revision="1.0" schemaVersion="1.0"> <policyNamespaces> <target prefix="office16" namespace="office16.Office.Microsoft.Policies.Windows" /> <using prefix="windows" namespace="Microsoft.Policies.Windows" /> </policyNamespaces> <supersededAdm fileName="office16" /> <resources minRequiredRevision="1.0" /> <categories> <category name="L_MicrosoftOfficemachine" displayName="$(string.L_MicrosoftOfficemachine)" /> <category name="L_MicrosoftOfficeSystem" displayName="$(string.L_MicrosoftOfficeSystem)" /> <category name="L_FirstRun" displayName="$(string.L_FirstRun)"> <parentCategory ref="L_MicrosoftOfficeSystem" /> </category> </categories> <policies> <policy name="L_DisableOOXMLBallot" class="User" displayName="$(string.L_DisableOOXMLBallot)" explainText="$(string.L_DisableOOXMLBallotExplain)" key="software\policies\microsoft\office\16.0\common\general" valueName="ShownFileFmtPrompt"> <parentCategory ref="L_FirstRun" /> <supportedOn ref="windows:SUPPORTED_Windows7" /> <enabledValue> <decimal value="1" /> </enabledValue> <disabledValue> <decimal value="0" /> </disabledValue> </policy> </policies> </policyDefinitions>
