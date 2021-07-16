@@ -1,4 +1,5 @@
-disabling Office OOXML Prompt Policy
+ADMX for disabling Office OOXML Prompt Policy
+Does not set policy
 
 OMA URI
 ./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/Office365ProPlus/Policy/OfficeFirstRunOOXML
