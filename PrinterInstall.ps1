@@ -1,3 +1,4 @@
+# Sysnative explanation https://www.samlogic.net/articles/sysnative-folder-64-bit-windows.htm
 # Export settings
 #$GPC = get-printconfiguration  -PrinterName "printer"
 #$GPC.PrintTicketXML | out-file C:\Temp\printer.xml
@@ -9,11 +10,13 @@
 #
 #Detect on Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\Xerox versalink C405
 #
+# Run the Sysnative line when packaged as win32
 #C:\Windows\Sysnative\pnputil.exe -i -a .\x3UNIVX.inf
 #Add-PrinterDriver -Name "Xerox Global Print Driver PCL6"
 #Add-PrinterPort -Name "Xerox 6515" -PrinterHostAddress "192.168.88.65"
 #Add-Printer -Name "Xerox 6515" -DriverName "Xerox Global Print Driver PCL6" -PortName "Xerox 6515"
 #
+# Run the System32 when testing as Admin
 C:\Windows\System32\pnputil.exe -i -a .\Xerox_VersaLink_C400_C405_PCL6.inf
 Add-PrinterDriver -Name "Xerox VersaLink C405 V4 PCL6"
 Add-PrinterPort -Name "Xerox C405" -PrinterHostAddress "10.0.0.152"
