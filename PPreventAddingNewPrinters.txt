@@ -1,0 +1,5 @@
+Create a custom profile
+
+OMA-URI
+./User/Vendor/MSFT/Policy/Config/Education/PreventAddingNewPrinters
+Integer=1
