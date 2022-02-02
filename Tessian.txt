@@ -1,0 +1,5 @@
+##Tessian mst install
+
+In InstallUI
+Update CA_TENANT64 and CA_TOKEN64
+msiexec /i "TessianAddinSetup_v2.4.8.msi" /qn TRANSFORMS="Token.mst"
