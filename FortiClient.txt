@@ -35,7 +35,7 @@ Create a .bat file called SSL-VPN.bat with the following commands
 1.	@echo off
 2.	if not exist "C:\Temp\" mkdir C:\Temp
 3.	msiexec /i FortiClientVPN.msi /passive  /quiet /L*V "C:\Temp\msilog.log" INSTALLLEVEL=3 DESKTOPSHORTCUT=1
-4.	copy SSL-VPN.conf "C:\Program Files\Fortinet\FortiClient\TMCP.conf" /Y
+4.	copy SSL-VPN.conf "C:\Program Files\Fortinet\FortiClient\SSL-VPN.conf" /Y
 5.	cd "C:\Program Files\Fortinet\FortiClient"
 6.	"C:\Program Files\Fortinet\FortiClient\FCConfig.exe" -m vpn -f "C:\Program Files\Fortinet\FortiClient\SSL-VPN.conf" -o import -i 1 -p Forticlient
 Package with Microsoft Win32 Content Prep Tool
