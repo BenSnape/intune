@@ -11,6 +11,8 @@ Force users to sign-in to use the browser
 Configure whether a user always has a default profile automatically signed in with their work or school account
 Enabled
 
+Force synchronization of browser data and do not show the sync consent prompt
+
 Enabled
 Sites to open when the browser starts
 Enabled
