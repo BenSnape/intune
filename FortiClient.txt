@@ -1,0 +1,51 @@
+FortiClient install with VPN configuration
+Obtain the latest MSI file
+1.	Download the client from https://www.forticlient.com/downloads
+2.	Run the installer and stop at the Welcome screen
+3.	Got to %Temp% and copy the FortiClientVPN.msi from the folder to another folder
+
+Install and create a connection
+1.	On a device you have administrator rights to install the extracted FortiClientVPN.msi
+2.	Launch the FortiClient and create a connection to the clients VPN
+
+Export the VPN settings
+1.	Export the settings to a .conf file
+2.	Open an administrator CMD window
+3.	Change directory to the FortiClient install location
+1.	Cd "C:\Program Files\Fortinet\FortiClient\"
+4.	Export the VPN config using the following command
+1.	FCConfig -m vpn -f c:\temp\SSL-VPN.conf -o export -i 1 -p Forticlient
+
+
+(Optional) Update the .conf file with the logon script
+Optional step to run a script when the VPN connects.
+This step can be useful for connecting mapped drives when the VPN launches
+1.	Open the SSL-VPN.conf file in notepad
+2.	In the <on_connect> section add the following command in the CDATA section between the square brackets
+<![CDATA[  HERE   ]]>
+
+Example command to add
+1.	cscript "C:\ProgramData\intune-drive-mapping-generator\IntuneDriveMapping-VBSHelper.vbs" "C:\ProgramData\intune-drive-mapping-generator\DriveMappping.ps1"
+
+Prepare the files
+Adjust the package if you are performing the optional steps
+
+Move the .msi and .conf file to a folder
+Create a .bat file called SSL-VPN.bat with the following commands
+1.	@echo off
+2.	if not exist "C:\Temp\" mkdir C:\Temp
+3.	msiexec /i FortiClientVPN.msi /passive  /quiet /L*V "C:\Temp\msilog.log" INSTALLLEVEL=3 DESKTOPSHORTCUT=1
+4.	copy SSL-VPN.conf "C:\Program Files\Fortinet\FortiClient\TMCP.conf" /Y
+5.	cd "C:\Program Files\Fortinet\FortiClient"
+6.	"C:\Program Files\Fortinet\FortiClient\FCConfig.exe" -m vpn -f "C:\Program Files\Fortinet\FortiClient\SSL-VPN.conf" -o import -i 1 -p Forticlient
+Package with Microsoft Win32 Content Prep Tool
+Use the tool from https://github.com/Microsoft/Microsoft-Win32-Content-Prep-ToolPackage all the folder items and create an App in Intune
+Detect on the MSI ID or .exe
+Get the WMI ID from this command on the device the Forticlient was installed
+1.	get-wmiobject Win32_Product | Sort-Object -Property Name | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+
+Update a VPN config
+The VPN config can be updated by exporting a new .conf file creating an Intune app to install the config only.
+This prevents the need for a reboot that occurs when a full VPN client is reinstalled
+
+
