@@ -2,7 +2,7 @@ FortiClient install with VPN configuration
 Obtain the latest MSI file
 1.	Download the client from https://www.forticlient.com/downloads
 2.	Run the installer and stop at the Welcome screen
-3.	Got to %Temp% and copy the FortiClientVPN.msi from the folder to another folder
+3.	Got to C:\ProgramData\Applications\Cache\  and copy the FortiClientVPN.msi from the folder to another folder
 
 Install and create a connection
 1.	On a device you have administrator rights to install the extracted FortiClientVPN.msi
