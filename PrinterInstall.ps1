@@ -10,14 +10,15 @@
 #
 #Detect on Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\Xerox versalink C405
 #
+$PrintDriver = "Kyocera TASKalfa 4052ci KX"
+$PrinterPort = "HRSO001PrintQueue"
+$PrinterIP = "10.16.3.4"
+$PrinterName = "HRSO001PrintQueue"
+
 # Run the Sysnative line when packaged as win32
+# Run the System32 line when packaged as testing in PowerShell
 #C:\Windows\Sysnative\pnputil.exe -i -a .\x3UNIVX.inf
-#Add-PrinterDriver -Name "Xerox Global Print Driver PCL6"
-#Add-PrinterPort -Name "Xerox 6515" -PrinterHostAddress "192.168.88.65"
-#Add-Printer -Name "Xerox 6515" -DriverName "Xerox Global Print Driver PCL6" -PortName "Xerox 6515"
-#
-# Run the System32 when testing as Admin
-C:\Windows\System32\pnputil.exe -i -a .\Xerox_VersaLink_C400_C405_PCL6.inf
-Add-PrinterDriver -Name "Xerox VersaLink C405 V4 PCL6"
-Add-PrinterPort -Name "Xerox C405" -PrinterHostAddress "10.0.0.152"
-Add-Printer -Name "Xerox versalink C405" -DriverName "Xerox VersaLink C405 V4 PCL6" -PortName "Xerox C405"
+#C:\Windows\System32\pnputil.exe -i -a .\Xerox_VersaLink_C400_C405_PCL6.inf
+Add-PrinterDriver -Name $PrintDriver
+Add-PrinterPort -Name $PrinterPort -PrinterHostAddress $PrinterIP
+Add-Printer -Name $PrinterName -DriverName $PrintDriver -PortName $PrinterPort
