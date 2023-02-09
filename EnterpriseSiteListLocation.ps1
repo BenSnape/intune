@@ -27,9 +27,9 @@ Write-host "Current time (UTC-0): $LogTime"
 #Setting IExplorer settings
 Write-Verbose "Now configuring Enterprise Site list location"
 
-$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode"
+$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Edge"
 
-$Name = "SiteList"
+$Name = "InternetExplorerIntegrationSiteList"
 
 $value = "https://<URL>sites.xml"
 
@@ -49,4 +49,30 @@ IF(!(Test-Path $registryPath))
 
 Write-Host "Enterprise Site list location added Successfully"
 
-Stop-Transcript
+#2. Set integration level
+
+#Setting IExplorer settings
+Write-Verbose "Now configuring integration level"
+
+$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Edge"
+
+$Name = "InternetExplorerIntegrationLevel"
+
+
+$value = "1"
+IF(!(Test-Path $registryPath))
+
+  {
+
+    New-Item -Path $registryPath -Force | Out-Null
+
+    New-ItemProperty -Path $registryPath -Name $name -Value $value   -PropertyType DWord -Force | Out-Null}
+
+ ELSE {
+
+    New-ItemProperty -Path $registryPath -Name $name -Value $value  -PropertyType DWord -Force | Out-Null}
+
+
+
+Write-Host "integration level added Successfully"
+
