@@ -1,6 +1,6 @@
 #description: This script will set the Enterprise Site list in the registry
 #execution mode: Combined
-#tags: Apps Install, MoJ, NOMIS
+#tags: Apps Install
 
 <#
     DESCRIPTION:    Create Trusted Sites 
